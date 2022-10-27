@@ -1,0 +1,51 @@
+    :root {
+        --transition-speed: 0.3s;
+    }
+
+    .title {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        line-height: 20px;
+        color: white;
+    }
+
+    .textm {
+        font-size: min(7em, 20vw);
+        font-style: italic;
+    }
+
+    .button {
+        font-weight: 500;
+        margin-top: 5px;
+        border-radius: 10px;
+        padding: 7px;
+        color: white;
+        background-color: rgba(255, 222, 173, 0);
+        border: 2px solid;
+        -webkit-transition: background-color var(--transition-speed) ease-out;
+        -moz-transition: background-color var(--transition-speed) ease-out;
+        -o-transition: background-color var(--transition-speed) ease-out;
+        transition: background-color var(--transition-speed) ease-out;
+    }
+
+    #startbutton {
+        border-color: var(--green);
+
+    }
+
+    #aboutbutton {
+        border-color: rgb(255, 255, 255);
+    }
+
+    #startbutton:hover {
+        color: rgb(0, 0, 0);
+        background-color: var(--green);
+    }
+
+    #aboutbutton:hover {
+        color: rgb(0, 0, 0);
+        background-color: white;
+    }

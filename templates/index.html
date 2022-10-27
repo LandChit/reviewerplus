@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+<title>Reviewer</title>
+
+{% endblock %}
+
+{% block body %}
+<div class="title">
+    <span class="textm">Reviewer</span><span class="textm" style="color:var(--green)">+</span><br>
+    <span>EZ GRADES</span><br>
+    <button id="aboutbutton" class="button">About</button> <button id="startbutton" class="button">Get Started</button>
+</div>
+
+<!-- About -->
+<div class="about">
+
+</div>
+
+<!-- Create -->
+<div class="create">
+
+</div>
+{% endblock %}

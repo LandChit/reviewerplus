@@ -1,0 +1,23 @@
+:root {
+    --green: rgb(110, 255, 142);
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(20, 20, 20);
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    display: block;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+}
+
+footer a, a:hover, a:active, a:visited{
+    color: white;
+}
