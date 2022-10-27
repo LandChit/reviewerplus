@@ -8,19 +8,25 @@
 {% endblock %}
 
 {% block body %}
-    <div class="title">
+    <div class="content">
         <span class="textm">Reviewer</span><span class="textm" style="color:var(--green)">+</span><br>
         <span>EZ GRADES</span><br>
-        <button id="aboutbutton" class="button">About</button> <button id="startbutton" class="button">Get Started</button>
+        <button id="createbutton" class="button">Create New</button>
+        <label class="button loadbutton">
+            <input type="file" id="loadbutton" />
+            Load
+        </label>
+        
+
+        <!-- About -->
+        <div class="about">
+            <p>This website was made to help people who are struggling to study by them selves, This website helps you memorise</p>
+        </div>
+    
+        <!-- Create -->
+        <div class="create popup">
+    
+        </div>
     </div>
-
-    <!-- About -->
-    <div class="about">
-
-    </div>
-
-    <!-- Create -->
-    <div class="create">
-
-    </div>
+    
 {% endblock %}

@@ -2,11 +2,11 @@
         --transition-speed: 0.3s;
     }
 
-    .title {
+    .content {
         position: absolute;
         left: 50%;
-        top: 40%;
-        transform: translate(-50%, -50%);
+        top: 40vh;
+        transform: translate(-50%, -10vh);
         text-align: center;
         line-height: 20px;
         color: white;
@@ -31,21 +31,27 @@
         transition: background-color var(--transition-speed) ease-out;
     }
 
-    #startbutton {
+    #createbutton {
         border-color: var(--green);
 
     }
 
-    #aboutbutton {
-        border-color: rgb(255, 255, 255);
-    }
-
-    #startbutton:hover {
+    
+    #createbutton:hover {
         color: rgb(0, 0, 0);
         background-color: var(--green);
     }
 
-    #aboutbutton:hover {
+    .loadbutton {
+        border-color: rgb(255, 255, 255);
+        font-size: 13px;
+    }
+
+    .loadbutton:hover {
         color: rgb(0, 0, 0);
         background-color: white;
+    }
+
+    input[type="file"] {
+        display: none;
     }
