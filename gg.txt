@@ -1,0 +1,19 @@
+<label class="button loadbutton">
+    <input type="file" id="loadbutton" />
+    Load
+</label>
+
+
+    .loadbutton {
+        border-color: rgb(255, 255, 255);
+        font-size: 13px;
+    }
+
+    .loadbutton:hover {
+        color: rgb(0, 0, 0);
+        background-color: white;
+    }
+
+    input[type="file"] {
+        display: none;
+    }

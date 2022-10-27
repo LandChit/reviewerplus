@@ -1,0 +1,13 @@
+.loadbutton {
+    border-color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+.loadbutton:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.loadbutton input[type="file"] {
+    display: none;
+}

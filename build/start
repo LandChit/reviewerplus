@@ -8,8 +8,8 @@
     <script src="https://kit.fontawesome.com/ab880f6949.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     
-    <link rel="stylesheet" type="text/css" href="static/css/index.css">
-    <title>Reviewer+</title>
+<link rel="stylesheet" type="text/css" href="static/css/start.css">
+<title>Reviewer+ | start</title>
 
 </head>
 
@@ -31,18 +31,12 @@
     </footer>
 
     
-    <div class="content">
-        <span class="textm">Reviewer</span><span class="textm" style="color:var(--green)">+</span><br>
-        <span>EZ GRADES</span><br><br>
-        <a id="startbutton" class="button" href="/start">Get Started</a>
 
-        <!-- About -->
-        <div class="about">
-            <p>This website was made to help people who are struggling to study by them selves, This website helps you memorise</p>
-        </div>
-    
-    </div>
-    
+<label class="button loadbutton">
+    <input type="file" id="loadbutton" />
+    Load
+</label>
+
 
     <!-- delete me when logic comes in -->
     <div style="display:block;width:100%;text-align:center;background-color:rgb(78, 0, 0);position:fixed;bottom:0;">Currrently non functional</div>

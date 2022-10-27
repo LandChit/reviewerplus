@@ -11,17 +11,25 @@
 </head>
 
 <body>
-    {% block body%}{% endblock %}
     <footer>
         <div style="padding: 10px;">
-
-                <a href="https://github.com/LandChit?tab=repositories" , target="_blank"><i class="fa-brands fa-github"></i>LandChit</a>
-                <a href="https://www.youtube.com/channel/UCFTq9afPWgOwQRBfr4KRJtw" , target="_blank"><i class="fa-brands fa-youtube"></i>LandChit</a>
-                <a href="https://twitter.com/LandChit" , target="_blank"><i class="fa-brands fa-twitter"></i>LandChit</a>
+                <div style="text-align:start ;">
+                    <a href="{{ url_for('index') }}" style="font-style:italic;">Reviewer<span style="color: var(--green);">+</span></a>&nbsp;&nbsp;
+                    <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html#SEC1" style="font-size: 8px;" target="_blank"><i class="fa-regular fa-copyright"></i>gpl-2.0</a>
+                </div>
+                <div style="margin-left:auto">
+                    <a href="https://github.com/LandChit?tab=repositories" , target="_blank"><i class="fa-brands fa-github"></i>LandChit</a>
+                    <a href="https://www.youtube.com/channel/UCFTq9afPWgOwQRBfr4KRJtw" , target="_blank"><i class="fa-brands fa-youtube"></i>LandChit</a>
+                    <a href="https://twitter.com/LandChit" , target="_blank"><i class="fa-brands fa-twitter"></i>LandChit</a>
+                    
+                </div>
             </div>
-            
         </div>
     </footer>
+
+    {% block body%}{% endblock %}
+    <!-- delete me when logic comes in -->
+    <div style="display:block;width:100%;text-align:center;background-color:rgb(78, 0, 0);position:fixed;bottom:0;">Currrently non functional</div>
 </body>
 
 </html>
