@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ab880f6949.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
-    {% block head %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    
+<link rel="stylesheet" type="text/css" href="../css/start.css">
+<title>Reviewer+ | </title>
+
 </head>
 
 <body>
     <footer>
         <div style="padding: 10px;">
                 <div style="text-align:start ;">
-                    <a href="{{ url_for('index') }}" style="font-style:italic;">Reviewer<span style="color: var(--green);">+</span></a>&nbsp;&nbsp;
+                    <a href="../../index" style="font-style:italic;">Reviewer<span style="color: var(--green);">+</span></a>&nbsp;&nbsp;
                     <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html#SEC1" style="font-size: 8px;" target="_blank"><i class="fa-regular fa-copyright"></i>gpl-2.0</a>
                 </div>
                 <div style="margin-left:auto">
@@ -27,7 +30,7 @@
         </div>
     </footer>
 
-    {% block body%}{% endblock %}
+
     <!-- delete me when logic comes in -->
     <div style="display:block;width:100%;text-align:center;background-color:rgb(78, 0, 0);position:fixed;bottom:0;">Currrently non functional</div>
 </body>
