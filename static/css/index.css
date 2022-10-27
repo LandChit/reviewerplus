@@ -19,6 +19,7 @@
 
 
     #startbutton {
+        color: white;
         border-color: var(--green);
         text-decoration: none;
     }
