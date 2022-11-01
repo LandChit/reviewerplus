@@ -1,4 +1,7 @@
+
+
 .loadbutton {
+    color: white;
     border-color: rgb(255, 255, 255);
     font-size: 13px;
 }
@@ -10,4 +13,47 @@
 
 .loadbutton input[type="file"] {
     display: none;
+}
+
+.createnew,.start {
+    color: white;
+    border-color: var(--green);
+    text-decoration: none;
+}
+
+
+.createnew:hover ,.start:hover {
+    color: rgb(0, 0, 0);
+    background-color: var(--green);
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputs{
+    margin-top: 15px;
+}
+
+#inputs > div{
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    width: fit-content;
+}
+#inputs input{
+    color:white;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: rgba(220, 220, 220, 0);
+}
+
+.name{
+    width: 70px;
 }

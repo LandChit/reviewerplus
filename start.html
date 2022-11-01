@@ -5,41 +5,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ab880f6949.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/start.css">
     
-<link rel="stylesheet" type="text/css" href="static/css/start.css">
-<title>Reviewer+ | start</title>
+
+    <title>Reviewer+ | start</title>
 
 </head>
 
 <body>
     <footer>
         <div style="padding: 10px;">
-                <div style="text-align:start ;">
-                    <a href="index" style="font-style:italic;">Reviewer<span style="color: var(--green);">+</span></a>&nbsp;&nbsp;
-                    <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html#SEC1" style="font-size: 8px;" target="_blank"><i class="fa-regular fa-copyright"></i>gpl-2.0</a>
-                </div>
-                <div style="margin-left:auto">
-                    <a href="https://github.com/LandChit?tab=repositories" , target="_blank"><i class="fa-brands fa-github"></i>LandChit</a>
-                    <a href="https://www.youtube.com/channel/UCFTq9afPWgOwQRBfr4KRJtw" , target="_blank"><i class="fa-brands fa-youtube"></i>LandChit</a>
-                    <a href="https://twitter.com/LandChit" , target="_blank"><i class="fa-brands fa-twitter"></i>LandChit</a>
-                    
-                </div>
+            <div style="text-align:start ;">
+                <a href="index" style="font-style:italic;">Reviewer<span
+                        style="color: var(--green);">+</span></a>&nbsp;&nbsp;
+                <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html#SEC1" style="font-size: 8px;"
+                    target="_blank"><i class="fa-regular fa-copyright"></i>gpl-2.0</a>
+            </div>
+            <div style="margin-left:auto">
+                <a href="https://github.com/LandChit?tab=repositories" , target="_blank"><i
+                        class="fa-brands fa-github"></i>LandChit</a>
+                <a href="https://www.youtube.com/channel/UCFTq9afPWgOwQRBfr4KRJtw" , target="_blank"><i
+                        class="fa-brands fa-youtube"></i>LandChit</a>
+                <a href="https://twitter.com/LandChit" , target="_blank"><i
+                        class="fa-brands fa-twitter"></i>LandChit</a>
+
             </div>
         </div>
+        </div>
     </footer>
+    <!-- CENTER -->
+    <div class="content">
+        <div class="buttons">
+            <button class="button createnew" onclick="create_new()">
+                Create new
+            </button>
+            <label class="button loadbutton">
+                <input type="file" accept=".json" id="loadbutton" />
+                Load(add)
+            </label>
+        </div>
 
-    
+        <div id="inputs">
+        </div>
 
-<label class="button loadbutton">
-    <input type="file" id="loadbutton" />
-    Load
-</label>
+        <div style="display: flex;">
+            <button class="button loadbutton" onclick="save()">Save</button>&nbsp;&nbsp;
+            <button class="button start" onclick="start()">Start</button>&nbsp;&nbsp;
+            <button class="button loadbutton"onclick="add_input()">Add</button>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).on('click', '.delete_input', function () {
+            $(this).parent().remove();
+        });
+
+        function create_new(){
+            $("#inputs").empty();
+            add_input()
+        }
+
+        function add_input(item,def) {
+            if(item,def === undefined){
+                item = ""
+                def =""
+            }
+            inputdiv = "<div><input class='name' placeholder='Item' value='"+item+"'> <input placeholder='Definition' value='"+def+"'> <button class='delete_input'>X</button></div>"
+            $("#inputs").append(inputdiv)
+        }
+
+        add_input()
+    </script>
+    <script src="static/js/startnload.js"></script>
 
 
     <!-- delete me when logic comes in -->
-    <div style="display:block;width:100%;text-align:center;background-color:rgb(78, 0, 0);position:fixed;bottom:0;">Currrently non functional</div>
+    <div style="display:block;width:100%;text-align:center;background-color:rgb(78, 0, 0);position:fixed;bottom:0;">
+        Currrently non functional</div>
 </body>
 
 </html>
