@@ -24,9 +24,9 @@ footer a, a:hover, a:active, a:visited{
     text-decoration: none;
     color: white;
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 400px){
 footer a{
-    font-size: 3.5vw;
+    font-size: 3.3vw;
 }
 }
 

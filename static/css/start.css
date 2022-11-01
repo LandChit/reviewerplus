@@ -54,6 +54,14 @@
     background-color: rgba(220, 220, 220, 0);
 }
 
+@media (max-width: 400px) {
+    .desc{
+    width: 50vw;
+}
+}
+
+
+
 .name{
     width: 70px;
 }
